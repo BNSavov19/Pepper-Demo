@@ -3,11 +3,12 @@
 	<head>	
 	
 		<style>
+
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 		
 			#Pepper_Screen{
 				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
+				justify-content: center;
 				align-items: center;
 				width: 1280px;
 				height: 800px;
@@ -15,13 +16,33 @@
 				margin-left: -8px;
 				background-color: black;
 			}
-		
+			
+			.projects-container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+
+			.projects-button{
+				z-index: 15;
+				width: 350px;
+				height: 80px;
+				border: none;
+				font-size: 2rem;
+				border-radius: 10px;
+				font-family: 'Montserrat';
+				letter-spacing: 1px;
+			}
+			
 			.Projects{
 				border: none;
 				width: 300px;
 				height: 400px;
 				font-size: 200px;
-				margin-left: 30px;
 				border-radius: 15px;
 			}
 			
@@ -50,15 +71,31 @@
 	<body>
 	
 		<div id="Pepper_Screen">
+
+			<button class="projects-button">Show projects</button>
 	
-			<a href="Fire-Dep/index.html"><button class="Projects" id="Project1"></button></a>
-			
-			<a href="Flare/index.html"><button class="Projects" id="Project2"></button></a>
-			
-			<a href=""><button class="Projects" id="Project3"></button></a>
+			<div class="projects-container">
+				<a href="Fire-Dep/index.html"><button class="Projects" id="Project1"></button></a>
+				
+				<a href="Flare/index.html"><button class="Projects" id="Project2"></button></a>
+				
+				<a href=""><button class="Projects" id="Project3"></button></a>
+			</div>
 		
 		</div>
 	
 	</body>
+
+	<script>
+
+		const button = document.querySelector('.projects-button');
+		const projectsContainer = document.querySelector('.projects-container');
+		button.addEventListener('click', () =>{
+			button.style.display = 'none';
+			projectsContainer.style.display = 'flex';
+
+		});
+
+	</script>
 
 </html>
