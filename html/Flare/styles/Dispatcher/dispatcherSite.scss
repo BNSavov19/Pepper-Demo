@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.input-field{
+    margin-bottom: 15px;
+    outline:none;
+    padding: 1em 1.8em;
+    border: 1px rgba(255, 255, 255, 0.342) solid;
+    border-radius: 15px;
+    background:rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(20px);
+    color:white;
+    transition: .2s;
+
+    &::placeholder{
+        color:#9798b1;
+    }
+
+    &:focus{
+        background:rgba(20, 5, 61, 0.301);
+        border-color:rgb(255, 0, 140);
+        box-shadow: rgba(255, 0, 140, 0.349) 0px 0px 15px 0.5px ;
+    }
+}
+
+body{
+
+    .forms-overlay-container{
+
+        position: absolute;
+
+        .form-bg-blur-animation{
+            animation: 0.8s ease 0s 1 normal forwards running blurFormBackground;
+        }
+
+        .form-enter-animation{
+            animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) .5s 1 normal forwards running loginFormEnter;
+        }
+
+        .form-overlay{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            z-index: -1;
+            display: none;
+            perspective: 175em;
+    
+            .add-worker-form-container{
+                position: relative;
+                max-width: 960px;
+                width: 100%;
+                height: 50%;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                background: rgba(50, 61, 109, 0.5);
+                backdrop-filter: blur(40px);
+                border: rgba(255, 255, 255, 0.219) .1px solid;
+                border-radius: 20px;
+                transition: 2s;
+                transition-delay: .6s;
+                opacity: 0;
+                display: none;
+
+                .message-container{
+                    position: absolute;
+                    bottom: 15px;
+
+                    #message{
+                        font-family: 'Montserrat';
+                        color: white;
+                    }
+                }
+
+                #add-worker-form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+
+                    .submit-button-container{
+
+                        .add-worker{
+                            padding: 1em 8em;
+                            background: linear-gradient(to left, rgb(255, 0, 140), purple);
+                            outline: none;
+                            border:none;
+                            border-radius: 15px;
+                            color: white;
+                            box-shadow: rgba(255, 0, 140, 0.349) 0px 0px 15px 0.5px;
+                            cursor: pointer;
+                            transition: .2s;
+
+                            &:hover{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    
+                }
+
+                h1{
+                    position: absolute;
+                    top: 15%;
+                    color: white;
+                    font-family:'Montserrat';
+                    font-size: 2.5rem;
+                }
+
+                .form-exit-button{
+                    position: absolute;
+                    right: -5px;
+                    top: -10px;
+                    cursor:pointer;
+                    background: none;
+                    outline:none;
+                    border:none;
+                    border-radius: 50px;
+                    padding: .8em 1em;
+                    background: rgba(255, 255, 255, 0.144);
+                    box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
+                    color: white;
+                    font-size: 1em;
+                    transition: .2s;
+
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.425);
+                        padding: .9em 1.1em;
+                    }
+                }
+            }
+
+            .add-truck-form-container{
+                position: relative;
+                max-width: 960px;
+                width: 100%;
+                height: 60%;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                background: rgba(50, 61, 109, 0.5);
+                backdrop-filter: blur(40px);
+                border: rgba(255, 255, 255, 0.219) .1px solid;
+                border-radius: 20px;
+                transition: 2s;
+                transition-delay: .6s;
+                opacity: 0;
+                display: none;
+
+                #add-truck-form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+                    margin-top: 4em;
+
+
+                    .submit-button-container{
+                        
+                        .add-fireTruck{
+                            padding: 1.6em 8em;
+                            background: linear-gradient(to left, rgb(255, 0, 140), purple);
+                            outline: none;
+                            border:none;
+                            border-radius: 15px;
+                            color: white;
+                            box-shadow: rgba(255, 0, 140, 0.349) 0px 0px 15px 0.5px;
+                            cursor: pointer;
+                            transition: .2s;
+                            margin-top: 2em;
+
+                            &:hover{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+                h1{
+                    position: absolute;
+                    top: 4%;
+                    color: white;
+                    font-family:'Montserrat';
+                    font-size: 2.5rem;
+                    display: flex;
+                }
+
+                .add-truck-form-exit-button{
+                    position: absolute;
+                    right: -5px;
+                    top: -10px;
+                    cursor:pointer;
+                    background: none;
+                    outline:none;
+                    border:none;
+                    border-radius: 50px;
+                    padding: .8em 1em;
+                    background: rgba(255, 255, 255, 0.144);
+                    box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
+                    color: white;
+                    font-size: 1em;
+                    transition: .2s;
+                    z-index: 1000;
+
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.425);
+                        padding: .9em 1.1em;
+                    }
+                }
+            }
+    }
+    
+    .site-container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .events-container{
+            height: 60vh;
+            width: 100%;
+            border-bottom: 1px solid black;
+
+            .events{
+                overflow-y: auto;
+            }
+
+            .eventContainer {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                opacity: 0;
+                animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) .5s 1 normal forwards running eventEnter;
+
+                .event{
+                    margin-bottom: 5px;
+                    perspective: 175em;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding: 15px 0px;
+                    padding-left: 20px;
+                    list-style-position: inside;
+                    border: 1px solid rgb(202, 202, 202);
+                    border-radius: 20px;
+                    width: 100%;
+                    z-index: 5;
+                    color: #7f87b7;
+
+                    p{
+                        text-align: center;
+                        overflow: auto;
+                    }
+
+                }
+
+                .interact-buttons-container{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    transition: .6s;
+                    opacity: 0;
+                    
+                    
+                    &:hover{
+                        opacity: 1;
+                        background: rgba(255, 255, 255, 0.493);
+                        backdrop-filter: blur(50px);
+                        cursor: pointer;
+                    }
+                }
+
+                .validate-button {
+                    background: #00ff73;
+                    border: none;
+                    height: 40px;
+                    width: 120px;
+                    border-radius: 10px;
+                    transition: .2s;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    color: white;
+
+                    &:hover{
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .reject-button {
+                    background: #d53d3c;
+                    border: none;
+                    height: 40px;
+                    width: 120px;
+                    border-radius: 10px;
+                    transition: .2s;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    color: white;
+
+                    &:hover{
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .mark-event-button {
+                    background: #3f9cb8;
+                    border: none;
+                    height: 40px;
+                    width: 120px;
+                    border-radius: 10px;
+                    transition: .2s;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    color: white;
+
+                    &:hover{
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .nav{
+                display: flex;
+                justify-content: space-evenly;
+                height: 10%;
+                z-index: 100;
+
+                .add-container {
+                    z-index: 100;
+                    
+                    .add-button {
+                        height: 100%;
+                    }
+
+                    .add-menu{
+                        position: absolute;
+                        width: 150px;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        background: rgba(50, 61, 109, 0.5);
+                        backdrop-filter: blur(10px);
+                        border: rgba(17, 17, 17, 0.219) .1px solid;
+                        border-radius: 20px;
+                        display: none;
+                    }
+                }
+            }
+
+
+            ol{
+                height: inherit;
+                overflow-y: hidden;
+            }
+        }
+
+        .map-container{
+            height: 40vh;
+            width: 100%;
+
+            .leaflet-control-container{
+                z-index: 1;
+            }
+
+            .leaflet-control-attribution{
+                display: none;
+            }
+
+            #map{
+                height:100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes blurFormBackground{
+    0%{
+        backdrop-filter: blur(0px);
+    }
+
+    100%{
+        backdrop-filter: blur(20px);
+    }
+}
+
+@keyframes loginFormEnter{
+    0%{
+        transform: rotateX(-18deg);
+        opacity: 0;
+        margin-bottom: 60px;
+        backdrop-filter: blur(0px);
+        box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px;
+    }
+
+    100%{
+        transform: rotateX(0);
+        opacity: 1;
+        margin-bottom: 0;
+        backdrop-filter: blur(30px);
+    }
+}
+
+@keyframes eventEnter{
+    0%{
+        filter: blur(2px);
+        transform: rotateX(-18deg);
+        opacity: 0;
+        margin-bottom: 60px;
+        backdrop-filter: blur(0px);
+        box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px;
+    }
+
+    100%{
+        filter: none;
+        transform: rotateX(0);
+        opacity: 1;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');

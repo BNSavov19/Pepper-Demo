@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flare</title>
+    <link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" href="../styles/Dispatcher/dispatcherSite.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+</head>
+<body>
+
+    <div class="forms-overlay-container">
+        <div class="form-overlay">
+            <div class="add-worker-form-container">
+                <button class="form-exit-button">X</button>
+                <h1>Add worker</h1>
+                <form id="add-worker-form">
+    
+                    
+                    <div class="id-field">
+                        <input type="text" name="id" id="form-id" class="input-field" autocomplete="off" placeholder="Worker ID">
+                    </div>
+                    
+                    <div class="name-field">
+                        <input type="text" name="name" id="form-name"  class="input-field" autocomplete="off" placeholder="Name">
+                    </div>
+
+                    <div class="permissions-field">
+                        <select name="permissions-dropdown" id="permissions-dropdown">
+                            <option value="0">Fire fighter</option>
+                            <option value="1">Driver</option>
+                        </select>
+                    </div>
+    
+                    <div class="submit-button-container">
+                        <button class="add-worker">Add worker</button>
+                    </div>
+                </form>
+
+                <div class="message-container">
+                    <p id="message"></p>
+                </div>
+            </div>
+
+            <div class="add-truck-form-container">
+                <button class="add-truck-form-exit-button">X</button>
+                <h1>Add Fire Truck</h1>
+                <form id="add-truck-form">
+                    
+                    <div class="brand-field">
+                        <input type="text" name="brand" id="form-brand" class="input-field" autocomplete="off" placeholder="Brand">
+                    </div>
+                    
+                    <div class="model-field">
+                        <input type="text" name="model" id="form-model"  class="input-field" autocomplete="off" placeholder="Model">
+                    </div>
+
+                    <div class="license-plate-field">
+                        <input type="text" name="license-plate" id="form-license-plate"  class="input-field" autocomplete="off" placeholder="License plate">
+                    </div>
+
+                    <div class="km-traveled-field">
+                        <input type="text" name="km-traveled" id="form-km-traveled"  class="input-field" autocomplete="off" placeholder="Km traveled">
+                    </div>
+
+                    <div class="water-storage-field">
+                        <input type="text" name="water-storage" id="form-water-storage"  class="input-field" autocomplete="off" placeholder="Water storage">
+                    </div>
+
+                    <div class="submit-button-container">
+                        <button class="add-fireTruck">Add firetruck</button>
+                    </div>
+                </form>
+
+                <div class="message-container">
+                    <p id="message"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="site-container">
+        <div class="events-container">
+            <div class="nav">
+                <button class="backButton">Back</button>
+                <button class="refreshButton">Refresh</button>
+                <div class='add-container'>
+                    <button class="add-button">Add</button>
+                    <div class="add-menu">
+                        <button class="add-worker-button">Worker</button>
+                        <button class="add-firetruck-button">Fire Truck</button>
+                    </div>
+                </div>
+            </div>
+            <ol class="events">
+            </ol>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../scripts/backend/index.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script type="text/javascript" src="../scripts/frontend/Dispatcher/dispatcherEvents.js"></script>
+    <script type="text/javascript" src="../scripts/frontend/Dispatcher/dispatcherMap.js"></script>
+    <script type="text/javascript" src="../scripts/frontend/Dispatcher/dipsatcherAddFunc.js"></script>
+    <script type="text/javascript" src="../scripts/frontend/Dispatcher/manageWorkerForm.js"></script>
+    <script type="text/javascript" src="../scripts/frontend/Dispatcher/manageTruckForm.js"></script>
+    
+</body>
+</html>
