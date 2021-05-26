@@ -72,7 +72,7 @@
 	
 		<div id="Pepper_Screen">
 
-			<button class="projects-button">Show projects</button>
+			<a href="#" class="button-link"><button class="projects-button">Show projects</button></a>
 	
 			<div class="projects-container">
 				<a href="Fire-Dep/index.html"><button class="Projects" id="Project1"></button></a>
@@ -89,8 +89,10 @@
 	<script>
 
 		const button = document.querySelector('.projects-button');
+		const link = document.querySelector('.button-link');
 		const projectsContainer = document.querySelector('.projects-container');
-		button.addEventListener('click', () =>{
+		link.addEventListener('click', (e) =>{
+			e.preventDefault();
 			button.style.display = 'none';
 			projectsContainer.style.display = 'flex';
 
