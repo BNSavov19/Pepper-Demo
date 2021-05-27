@@ -97,6 +97,76 @@
         <File name="Fire-Dep" src="html/images/Fire-Dep.png" />
         <File name="Flare" src="html/images/Flare.png" />
         <File name="index" src="html/index.html" />
+        <File name="README" src="README.md" />
+        <File name="AURORAGAMES" src="html/Aurora Games/images/AURORAGAMES.png" />
+        <File name="Peshev" src="html/Aurora Games/images/Peshev.jpeg" />
+        <File name="Savov" src="html/Aurora Games/images/Savov.jpg" />
+        <File name="Simeonov" src="html/Aurora Games/images/Simeonov.jpg" />
+        <File name="arrow" src="html/Aurora Games/images/arrow.png" />
+        <File name="Malchev" src="html/Aurora Games/images/preview-imgs/Malchev.png" />
+        <File name="Nanev" src="html/Aurora Games/images/preview-imgs/Nanev.png" />
+        <File name="Peshev" src="html/Aurora Games/images/preview-imgs/Peshev.png" />
+        <File name="Savov" src="html/Aurora Games/images/preview-imgs/Savov.png" />
+        <File name="Simeonov" src="html/Aurora Games/images/preview-imgs/Simeonov.png" />
+        <File name="BG" src="html/Aurora Games/images/svgs/BG.svg" />
+        <File name="Cloud1" src="html/Aurora Games/images/svgs/Cloud1.svg" />
+        <File name="Cloud10" src="html/Aurora Games/images/svgs/Cloud10.svg" />
+        <File name="Cloud2" src="html/Aurora Games/images/svgs/Cloud2.svg" />
+        <File name="Cloud3" src="html/Aurora Games/images/svgs/Cloud3.svg" />
+        <File name="Cloud4" src="html/Aurora Games/images/svgs/Cloud4.svg" />
+        <File name="Cloud5" src="html/Aurora Games/images/svgs/Cloud5.svg" />
+        <File name="Cloud6" src="html/Aurora Games/images/svgs/Cloud6.svg" />
+        <File name="Cloud7" src="html/Aurora Games/images/svgs/Cloud7.svg" />
+        <File name="Cloud8" src="html/Aurora Games/images/svgs/Cloud8.svg" />
+        <File name="Cloud9" src="html/Aurora Games/images/svgs/Cloud9.svg" />
+        <File name="Background" src="html/Aurora Games/images/svgs/Intro/Background.svg" />
+        <File name="Background1" src="html/Aurora Games/images/svgs/Intro/Background1.svg" />
+        <File name="Background2" src="html/Aurora Games/images/svgs/Intro/Background2.svg" />
+        <File name="Background3" src="html/Aurora Games/images/svgs/Intro/Background3.svg" />
+        <File name="Cloud1" src="html/Aurora Games/images/svgs/Intro/Cloud1.svg" />
+        <File name="Cloud2" src="html/Aurora Games/images/svgs/Intro/Cloud2.svg" />
+        <File name="Cloud3" src="html/Aurora Games/images/svgs/Intro/Cloud3.svg" />
+        <File name="Cloud4" src="html/Aurora Games/images/svgs/Intro/Cloud4.svg" />
+        <File name="Cloud5" src="html/Aurora Games/images/svgs/Intro/Cloud5.svg" />
+        <File name="Fog-background" src="html/Aurora Games/images/svgs/Intro/Fog-background.svg" />
+        <File name="Fog-foreground" src="html/Aurora Games/images/svgs/Intro/Fog-foreground.svg" />
+        <File name="Fog-midground" src="html/Aurora Games/images/svgs/Intro/Fog-midground.svg" />
+        <File name="Foreground1" src="html/Aurora Games/images/svgs/Intro/Foreground1.svg" />
+        <File name="Foreground2" src="html/Aurora Games/images/svgs/Intro/Foreground2.svg" />
+        <File name="Foreground3" src="html/Aurora Games/images/svgs/Intro/Foreground3.svg" />
+        <File name="MainDetail-backgroundv2" src="html/Aurora Games/images/svgs/Intro/MainDetail-backgroundv2.svg" />
+        <File name="MainDetail-foregroundv2" src="html/Aurora Games/images/svgs/Intro/MainDetail-foregroundv2.svg" />
+        <File name="MainDetail-midgroundv2" src="html/Aurora Games/images/svgs/Intro/MainDetail-midgroundv2.svg" />
+        <File name="Midground1" src="html/Aurora Games/images/svgs/Intro/Midground1.svg" />
+        <File name="Midground2" src="html/Aurora Games/images/svgs/Intro/Midground2.svg" />
+        <File name="Midground3" src="html/Aurora Games/images/svgs/Intro/Midground3.svg" />
+        <File name="Moon-background" src="html/Aurora Games/images/svgs/Intro/Moon-background.svg" />
+        <File name="Moon-foreground" src="html/Aurora Games/images/svgs/Intro/Moon-foreground.svg" />
+        <File name="Moon-midground" src="html/Aurora Games/images/svgs/Intro/Moon-midground.svg" />
+        <File name="Stars" src="html/Aurora Games/images/svgs/Intro/Stars.svg" />
+        <File name="MainDetail-background" src="html/Aurora Games/images/svgs/MainDetail-background.svg" />
+        <File name="MainDetail-foreground" src="html/Aurora Games/images/svgs/MainDetail-foreground.svg" />
+        <File name="MainDetail-foreground2" src="html/Aurora Games/images/svgs/MainDetail-foreground2.svg" />
+        <File name="MainDetail-midground" src="html/Aurora Games/images/svgs/MainDetail-midground.svg" />
+        <File name="Planet" src="html/Aurora Games/images/svgs/Planet.svg" />
+        <File name="SecondDetail-background" src="html/Aurora Games/images/svgs/SecondDetail-background.svg" />
+        <File name="SecondDetail-foreground" src="html/Aurora Games/images/svgs/SecondDetail-foreground.svg" />
+        <File name="SecondDetail-midground" src="html/Aurora Games/images/svgs/SecondDetail-midground.svg" />
+        <File name="Stars-background" src="html/Aurora Games/images/svgs/Stars-background.svg" />
+        <File name="Stars-foreground" src="html/Aurora Games/images/svgs/Stars-foreground.svg" />
+        <File name="Stars-midground" src="html/Aurora Games/images/svgs/Stars-midground.svg" />
+        <File name="Title" src="html/Aurora Games/images/svgs/Title.svg" />
+        <File name="_TITLE_" src="html/Aurora Games/images/svgs/_TITLE_.svg" />
+        <File name="index" src="html/Aurora Games/index.html" />
+        <File name="animations" src="html/Aurora Games/js/animations.js" />
+        <File name="app" src="html/Aurora Games/js/game-js/app.js" />
+        <File name="handle-buttons" src="html/Aurora Games/js/handle-buttons.js" />
+        <File name="handle-scrolling" src="html/Aurora Games/js/handle-scrolling.js" />
+        <File name="parallax_logic" src="html/Aurora Games/js/parallax_logic.js" />
+        <File name="style" src="html/Aurora Games/styles/style.css" />
+        <File name="style.css" src="html/Aurora Games/styles/style.css.map" />
+        <File name="style" src="html/Aurora Games/styles/style.scss" />
+        <File name="Aurora" src="html/images/Aurora.png" />
     </Resources>
     <Topics />
     <IgnoredPaths />
